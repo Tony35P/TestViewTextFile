@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">
+        @foreach (string text in ViewBag.Data)
+        {
+            <h4>@text</h4>
+        }
+    </p>
+    
+</div>
+
+<div class="row">
+    @foreach (string text in ViewBag.Data)
+    {
+        <h4>@text</h4>
+    }
+</div>
